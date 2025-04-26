@@ -1,208 +1,228 @@
 /* Corpo e fundo geral */
 body {
-    background-color: #000;
-    color: #00ffff;
-    font-family: 'Orbitron', sans-serif;
-    padding-top: 60px; /* Compensa a altura da navbar fixa */
-  }
-  
-  h1, h2, h5 {
-    color: #ffcc00;
-  }
-  
-  a {
-    color: #00ffff;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  a:hover {
-    color: #ffcc00;
-    text-shadow: 0 0 5px #ffcc00;
-  }
-  
-  .btn-primary {
-    background-color: #00ffff;
-    border: none;
-    font-weight: bold;
-    color: #000;
-  }
-  
-  .btn-primary:hover {
-    background-color: #ffcc00;
-    color: #000;
-  }
-  
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  footer {
-    background-color: #111;
-    color: #888;
-  }
-  
-  /* Animações para revelar seções */
-  section {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
-  }
-  
-  section.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  /* Navbar fixa */
-  .navbar {
-    background-color: #111;
-  }
-  
-  .navbar .nav-link {
-    color: #00ffff !important;
-  }
-  
-  .navbar .nav-link:hover {
-    color: #ffcc00 !important;
-  }
-  
-  /* Estilo para os botões da seção de contato */
-  .btn-cyberpunk {
-    background: linear-gradient(45deg, #00ffff, #ffcc00, #00ffff);
-    border: 2px solid #00ffff;
-    color: #000;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    margin: 5px;
-    transition: all 0.3s ease;
-    border-radius: 50px;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
-  }
-  
-  .btn-cyberpunk:hover {
-    background: linear-gradient(45deg, #ffcc00, #00ffff, #ffcc00);
-    color: #000;
-    transform: scale(1.1);
-    box-shadow: 0 0 40px rgba(255, 204, 0, 1), 0 0 60px rgba(0, 255, 255, 1);
-  }
-  
-  /* Estilo da seção 'Sobre' */
-  #sobre {
-    background-color: #111;
-    color: #00ffff;
-    padding: 40px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Efeito de sombra */
-  }
-  
-  #sobre h2 {
-    font-size: 2.5rem;
-    color: #ffcc00;
-    margin-bottom: 20px;
-  }
-  
-  #sobre img {
-    border: 5px solid #ffcc00; /* Borda amarela */
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Sombra azul cibernética */
-    transition: all 0.3s ease-in-out;
-  }
-  
-  #sobre img:hover {
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
-    box-shadow: 0 0 30px rgba(0, 255, 255, 1); /* Aumenta a sombra no hover */
-  }
-  
-  #sobre p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-top: 20px;
-  }
-  
-  /* Estilo para o Carrossel de Cards */
-  #projetos {
-    background-color: #111;
-    color: #00ffff;
-    padding: 40px 0;
-    border-radius: 10px;
-  }
-  
-  #projetos h2 {
-    font-size: 2.5rem;
-    color: #ffcc00;
-    margin-bottom: 30px;
-  }
-  
-  /* Estilo dos Cards */
-  .card {
-    background-color: #222;
-    color: #fff;
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
-  }
-  
-  .card-img-top {
-    border-bottom: 5px solid #ffcc00; /* Borda amarela na parte inferior da imagem */
-  }
-  
-  .card-body {
-    text-align: center;
-  }
-  
-  .card-title {
-    font-size: 1.5rem;
-    color: #ffcc00;
-  }
-  
-  .card-text {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #00ffff;
-  }
-  
-  /* Estilo dos Botões */
-  .btn-cyberpunk {
-    background: linear-gradient(45deg, #00ffff, #ffcc00, #00ffff);
-    border: 2px solid #00ffff;
-    color: #000;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    margin: 5px;
-    transition: all 0.3s ease;
-    border-radius: 50px;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
-  }
+  background-color: #000;
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+  padding-top: 60px; /* Compensa a altura da navbar fixa */
+}
 
-  .btn-cyberpunk:hover {
-    background: linear-gradient(45deg, #ffcc00, #00ffff, #ffcc00);
-    color: #000;
-    transform: scale(1.1);
-    box-shadow: 0 0 40px rgba(255, 204, 0, 1), 0 0 60px rgba(0, 255, 255, 1);
-  }
-  .carousel-item {
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .carousel-inner {
-    padding: 20px 0;
-  }
-  
-  .card {
-    margin: 0 auto;
-  }
-  
+h1, h2, h5 {
+  color: #ffcc00;
+}
+
+a {
+  color: #00ffff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #ffcc00;
+  text-shadow: 0 0 5px #ffcc00;
+}
+
+.btn-primary {
+  background-color: #00ffff;
+  border: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #111;
+  color: #888;
+}
+
+/* Animações para revelar seções */
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Navbar fixa */
+.navbar {
+  background-color: #111;
+}
+
+.navbar .nav-link {
+  color: #00ffff !important;
+}
+
+.navbar .nav-link:hover {
+  color: #ffcc00 !important;
+}
+
+/* Estilo para os botões da seção de contato */
+.btn-cyberpunk {
+  background: linear-gradient(45deg, #00ffff, #ffcc00, #00ffff);
+  border: 2px solid #00ffff;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin: 5px;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+.btn-cyberpunk:hover {
+  background: linear-gradient(45deg, #ffcc00, #00ffff, #ffcc00);
+  color: #000;
+  transform: scale(1.1);
+  box-shadow: 0 0 40px rgba(255, 204, 0, 1), 0 0 60px rgba(0, 255, 255, 1);
+}
+
+/* Estilo da seção 'Sobre' */
+#sobre {
+  background-color: #111;
+  color: #00ffff;
+  padding: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Efeito de sombra */
+}
+
+#sobre h2 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+#sobre img {
+  border: 5px solid #ffcc00; /* Borda amarela */
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Sombra azul cibernética */
+  transition: all 0.3s ease-in-out;
+}
+
+#sobre img:hover {
+  transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+  box-shadow: 0 0 30px rgba(0, 255, 255, 1); /* Aumenta a sombra no hover */
+}
+
+#sobre p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+/* Estilo para o Carrossel de Cards */
+#projetos {
+  background-color: #111;
+  color: #00ffff;
+  padding: 40px 0;
+  border-radius: 10px;
+}
+
+#projetos h2 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 30px;
+}
+
+/* Estilo dos Cards */
+.card {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+.card-img-top {
+  border-bottom: 5px solid #ffcc00; /* Borda amarela na parte inferior da imagem */
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #ffcc00;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #00ffff;
+}
+
+/* Estilo do Carrossel de Experiências Profissionais */
+#experiencias {
+  background-color: #111;
+  color: #00ffff;
+  padding: 40px 0;
+  border-radius: 10px;
+}
+
+#experiencias h2 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Estilo do Carrossel de Experiências */
+#experiencias .carousel-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#experiencias .carousel-item {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease;
+}
+
+#experiencias .carousel-item img {
+  max-height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+#experiencias .carousel-caption {
+  color: #ffcc00;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Estilo dos Botões de Navegação para Experiências */
+#experiencias .carousel-control-prev,
+#experiencias .carousel-control-next {
+  color: #00ffff;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+#experiencias .carousel-control-prev:hover,
+#experiencias .carousel-control-next:hover {
+  color: #ffcc00;
+  text-shadow: 0 0 5px #ffcc00;
+}
